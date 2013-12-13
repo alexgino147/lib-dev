@@ -20,7 +20,7 @@ $gu=$_SESSION['cf_login_grupousuario'];
 
 $smarty = new Smarty; 
 $smarty->compile_check =true; 
-$smarty->debugging = true;
+#$smarty->debugging = true;
 
 $ctramites=new ctramites;
 

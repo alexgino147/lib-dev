@@ -10,29 +10,49 @@
     <script src="templates/js/bootstrap.min.js"></script>
 {/literal}
 
-
+<div>Lista de Solicitudes de Tramites</div><br>
        <table class="table table-striped">
     
         <tr>
             <th>N</th>
             <th>Codigo Tramite</th>
+               <th>Alumno</th>
             <th>Nombre Tramite</th>
             <th>Fecha Registro</th>
             <th>Area</th>
             <th>Estado Tramite</th>
         </tr>
-  {section name=numloop loop=$idtramite}
+
         <tr>
-            <td>{$idtramite[numloop]}</td>
-            <td>{$codigotramite[numloop]}</td>
-            <td>{$nombretramite[numloop]}</td>
-            <td>{$fecharegistro[numloop]}</td>
-            <td>{$estadotramite[numloop]}</td>
-            <td>{$idarea[numloop]}</td>
-            <td>{$fecharegistro[numloop]}</td>
-            <td>{$fecharegistro[numloop]}</td>
+            <td>1</td>
+            <td>1000001</td>
+            <td>Perez Salazar, Carlos</td>
+            <td>Admision Ordinaria</td>
+            <td>2012-11-11</td>
+            <td>Oficina de Admision</td>
+            <td>En tramite</td>
         </tr>
-       {/section}
+        
+                <tr>
+            <td>2</td>
+            <td>1000002</td>
+            <td>Castro Reyna, Claudia</td>
+            <td>Constancia de ingreso</td>
+            <td>2012-10-11</td>
+            <td>Oficina de Admision</td>
+            <td>En tramite</td>
+        </tr>
+        
+                <tr>
+            <td>3</td>
+            <td>1000003</td>
+            <td>Mendoza Alcala, Julia</td>
+            <td>Constancia de ingreso</td>
+            <td>2012-09-23</td>
+            <td>Oficina de Admision</td>
+            <td>En tramite</td>
+        </tr>
+      
 </table>
 
 </html>

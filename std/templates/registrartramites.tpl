@@ -10,12 +10,30 @@
     <script src="templates/js/bootstrap.min.js"></script>
 {/literal}
 
-<form class="form-horizontal" method="post" action="validartramites.php}">
-<fieldset>
+<form class="form-horizontal">
+<div>Registrar tramite</div><br>
 
-<legend>Registrar tramite</legend>
+<table border="0">
+        <tr>
+            <td>
+            
+                <div class="control-group">
+  <label class="control-label" for="textinput">Codigo</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" type="text" placeholder="" class="input-xlarge" value="{$nombremanual[0]}">
 
-<!-- Select Basic -->
+  </div>
+</div>
+    
+                    <div class="control-group">
+  <label class="control-label" for="textinput">Alumno</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" type="text" placeholder="" class="input-xlarge" value="{$nombremanual[0]}">
+
+  </div>
+</div>
+    
+    <!-- Select Basic -->
 <div class="control-group">
   <label class="control-label" for="selectbasic">Seleccione Area</label>
   <div class="controls">
@@ -42,15 +60,33 @@
       
   </div>
 </div>
+            
+            </td>
+            <td>
+            
+ 
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="textarea">Requisitos</label>
+  <div class="controls">                     
+    <textarea id="textarea" name="textarea" rows="10" cols="30"></textarea>
+  </div>
+</div>
 
 <!-- Button (Double) -->
 <div class="control-group">
  
-  <div class="controls">
-       <input name="tipo" value="ns" type="hidden" size="50" />
-    <button id="button1id" name="button1id" class="btn btn-success">Siguiente</button>
-  </div>
+ 
 </div>
 
-</fieldset>
+            
+            </td>
+        </tr>
+</table>
+
+ <div class="controls">
+       <input name="tipo" value="ns" type="hidden" size="50" />
+    <button id="button1id" name="button1id" class="btn btn-success">Guardar</button>
+   <!-- <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>-->
+  </div>
 </form>
